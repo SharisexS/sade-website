@@ -91,7 +91,7 @@ main {
 
 
 .caption-text {
-    background-image: url('file:///Users/sharisemacbook/Sharise%20Code%20Academy/sade-website/resources/images/unnamed.jpeg');
+    background-image: url('../images/sade-logo.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -105,7 +105,7 @@ main {
     display: flex;
     text-align: center;
     position: sticky;
-    top: 0px;
+    top: 108px;
     opacity: .85;
 }
 
@@ -114,7 +114,7 @@ main {
     background-color: #cecdca;
     padding: 10px;
     width: 99%;
-    margin-top: 20%;
+   /* margin-top: 20%;*/
 } 
 
 
@@ -149,7 +149,7 @@ main {
 
 .travel-text { 
     margin-top: 4px;
-    background-image: url('./resources/images/sade-logo.jpeg');
+    background-image: url('https://images.adsttc.com/media/images/5c8f/dbd6/284d/d1e4/9400/0712/slideshow/2.jpg?1552931787');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
