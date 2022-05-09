@@ -1,8 +1,198 @@
-button {
-    border: 1px solid #ff0000;
-    padding: 10px;
-    background-color: burlywood;
-    margin: 10px;
+html {
+    margin: 0%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #28282B;
+    border-bottom: 3px solid black;
+    height: 100px;
+    width: 99%;
+    z-index: 1;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+ /*figure out what this does*/
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+} 
+/*LOOK AT THIS */
+header .logo {
+    float: left;
+    height: auto;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+
+nav {
+    float: right;
+} 
+
+nav ul {
+    margin-right: 70px;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    position: relative;
+    
+}
+
+nav a {
+    text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
+    color: #ffd700
+}
+
+nav a:hover {
+  color: white; 
+  text-decoration: underline;
+  transition: all ease-in-out 100ms;
+}
+
+
+/*max-width 480px*/
+
+@media only screen and (max-width: 480px) {
+    header {
+        width: 100%;
+        height: auto;
+        flex-shrink: 1;
+        outline: 17px solid purple;
+}
+
+    .logo {
+        display: none;
+    }
+}
+
+
+
+/*Caption Section*/
+
+
+main {
+    margin-top: 108px;
+}
+
+
+.caption-text {
+    background-image: url('file:///Users/sharisemacbook/Sharise%20Code%20Academy/sade-website/resources/images/unnamed.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 99%;
+    height: 700px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+}
+
+.caption-container {
+    display: flex;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    opacity: .85;
+}
+
+.container-context {
+    text-align: center;
+    background-color: #cecdca;
+    padding: 10px;
+    width: 99%;
+    margin-top: 20%;
+} 
+
+
+.link-list li {
+    display: inline;
+    padding: 5px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif ;
+    font-weight: 800;
+    border-radius: 5px;
+    
+}
+
+.link-list a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.link-list a:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: grab;
+
+}
+
+.link-list a:visited { 
+    color: purple;
+}
+
+/*travel Section*/
+
+.travel-text { 
+    margin-top: 4px;
+    background-image: url('https://images.adsttc.com/media/images/5c8f/dbd6/284d/d1e4/9400/0712/slideshow/2.jpg?1552931787');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 99;
+    height: 700px;
+}
+.travel-container {
+    display: flex;
+    opacity: .85;
+}
+
+.travel-context {
+    font-family: 'roboto', serif;
+    font-weight: 300;
+    margin: 150px 100px;
+    width: 500px;
+    height: auto;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #cecdca;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+/* Travel Pictures */
+.travel-photos {
+    display: inline-flex;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container>img {
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.image-container{
+    width: 375px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
 }
